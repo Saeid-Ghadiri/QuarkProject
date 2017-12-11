@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PhonebookForm));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.persianDateTimePicker1 = new FreeControls.PersianDateTimePicker();
             this.dtSelectorPhonebook = new Atf.UI.DateTimeSelector();
             this.btn_BrowsePicturePhonebook = new System.Windows.Forms.Button();
             this.btn_BackToMainForm = new System.Windows.Forms.Button();
@@ -71,6 +72,7 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.PeachPuff;
+            this.groupBox1.Controls.Add(this.persianDateTimePicker1);
             this.groupBox1.Controls.Add(this.dtSelectorPhonebook);
             this.groupBox1.Controls.Add(this.btn_BrowsePicturePhonebook);
             this.groupBox1.Controls.Add(this.btn_BackToMainForm);
@@ -112,9 +114,21 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "دفترچه تلفن";
             // 
+            // persianDateTimePicker1
+            // 
+            this.persianDateTimePicker1.BackColor = System.Drawing.Color.White;
+            this.persianDateTimePicker1.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.persianDateTimePicker1.Location = new System.Drawing.Point(486, 156);
+            this.persianDateTimePicker1.Name = "persianDateTimePicker1";
+            this.persianDateTimePicker1.ShowTime = false;
+            this.persianDateTimePicker1.Size = new System.Drawing.Size(175, 18);
+            this.persianDateTimePicker1.TabIndex = 33;
+            this.persianDateTimePicker1.Text = "persianDateTimePicker1";
+            this.persianDateTimePicker1.Value = ((FreeControls.PersianDate)(resources.GetObject("persianDateTimePicker1.Value")));
+            // 
             // dtSelectorPhonebook
             // 
-            this.dtSelectorPhonebook.Location = new System.Drawing.Point(486, 153);
+            this.dtSelectorPhonebook.Location = new System.Drawing.Point(183, 261);
             this.dtSelectorPhonebook.Name = "dtSelectorPhonebook";
             this.dtSelectorPhonebook.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.dtSelectorPhonebook.Size = new System.Drawing.Size(175, 31);
@@ -475,5 +489,6 @@
         private System.Windows.Forms.Label label1;
         private Atf.UI.DateTimeSelector dtSelectorPhonebook;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private FreeControls.PersianDateTimePicker persianDateTimePicker1;
     }
 }
