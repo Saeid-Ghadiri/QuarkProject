@@ -1,12 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using System.Linq;
 
 namespace Quark.Forms
 {
@@ -19,7 +11,9 @@ namespace Quark.Forms
         {
             InitializeComponent();
 
-            InputLanguage.CurrentInputLanguage = InputLanguage.FromCulture(new System.Globalization.CultureInfo("FA-IR", false));
+            System.Windows.Forms
+                .InputLanguage.CurrentInputLanguage = System.Windows.Forms.InputLanguage
+                .FromCulture(new System.Globalization.CultureInfo("FA-IR", false));
         }
 
         private void PhonebookForm_Load(object sender, System.EventArgs e)
@@ -28,8 +22,8 @@ namespace Quark.Forms
         }
         #endregion / Load Form
 
-        #region Save Data To DB
-        private void btn_Save_Click(object sender, System.EventArgs e)
+        #region Insert
+        private void insertButton_Click(object sender, System.EventArgs e)
         {
             //// **************************************************
 
@@ -42,54 +36,58 @@ namespace Quark.Forms
                     new Models.DatabaseContext();
 
                 // Load Data
-                Models.Phonebook oPhonebook =
+                Models.Phonebook phonebook =
                     oDatabaseContext.Phonebooks
-                    .Where(current => string.Compare(current.NationalCode, txt_NationalCode.Text, true) == 0)
+                    .Where(current => string.Compare(current.NationalCode, nationalCodeTextBox.Text, true) == 0)
                     .FirstOrDefault();
 
-                if (oPhonebook != null)
+                if (phonebook != null)
                 {
 
                     //-------------------------------------------------------------------------
-                    MessageBox.Show(
-                        "کاربر محترم:: کد ملی ثبت شده اشتباه است!.",
-                        "اطلاع رسانی",
-                        MessageBoxButtons.OK,
-                        MessageBoxIcon.Error,
-                        MessageBoxDefaultButton.Button2,
-                        MessageBoxOptions.RightAlign | MessageBoxOptions.RtlReading);
+                    System.Windows.Forms.
+                        MessageBox.Show(
+                        text: "کاربر محترم:: کد ملی خود را صحیح وارد نمایید!",
+                        caption: "اطلاع رسانی",
+                        buttons: System.Windows.Forms.MessageBoxButtons.OK,
+                        icon: System.Windows.Forms.MessageBoxIcon.Error,
+                        defaultButton: System.Windows.Forms.MessageBoxDefaultButton.Button2,
+                        options: System.Windows.Forms.MessageBoxOptions.RightAlign | System.Windows.Forms.MessageBoxOptions.RtlReading);
                     //-------------------------------------------------------------------------
 
-                    txt_NationalCode.Focus();
+                    nationalCodeTextBox.Focus();
 
                     return;
                 }
 
-                oPhonebook = new Models.Phonebook();
+                phonebook = new Models.Phonebook();
 
-               
+                // Add field 
+                phonebook.NationalCode = nationalCodeTextBox.Text;
 
 
 
 
-                oDatabaseContext.Phonebooks.Add(oPhonebook);
+                oDatabaseContext.Phonebooks.Add(phonebook);
 
                 oDatabaseContext.SaveChanges();
 
                 //System.Windows.Forms.MessageBox.Show("Registration Done!");
 
                 //-------------------------------------------------------------------------
-                MessageBox
+                System.Windows.Forms.MessageBox
                     .Show(
                     text: "کاربر محترم:: ثبت اطلاعات شما با موفقیت انجام شد.",
                     caption: "اطلاع رسانی",
-                    buttons: MessageBoxButtons.OK,
-                    icon: MessageBoxIcon.Information,
-                    defaultButton: MessageBoxDefaultButton.Button2,
-                    options: MessageBoxOptions.RightAlign | MessageBoxOptions.RtlReading);
+                    buttons: System.Windows.Forms.MessageBoxButtons.OK,
+                    icon: System.Windows.Forms.MessageBoxIcon.Information,
+                    defaultButton: System.Windows.Forms.MessageBoxDefaultButton.Button2,
+                    options: System.Windows.Forms.MessageBoxOptions.RightAlign | System.Windows.Forms.MessageBoxOptions.RtlReading);
                 //-------------------------------------------------------------------------
 
-               // txt_NationalCode.Focus();
+                nationalCodeTextBox.Text = string.Empty;
+
+                nationalCodeTextBox.Focus();
 
             }
             catch (System.Exception ex)
@@ -104,7 +102,7 @@ namespace Quark.Forms
                     oDatabaseContext = null;
                 }
             }
-        }// end insert btn
+        }// end insert 
 
         //****************************************************************************************************************
         // Image TO Byte
@@ -116,15 +114,15 @@ namespace Quark.Forms
         }
 
         //Byte To Image
-        private Image byteArrayToImage(byte[] byteArrayIn)
+        private System.Drawing.Image byteArrayToImage(byte[] byteArrayIn)
         {
             System.IO.MemoryStream memoryStream = new System.IO.MemoryStream(byteArrayIn);
-            Image returnImage = Image.FromStream(memoryStream);
+            System.Drawing.Image returnImage = System.Drawing.Image.FromStream(memoryStream);
             return returnImage;
         }
         //****************************************************************************************************************
 
-        #endregion /  Save Data To DB
+        #endregion /  Insert
 
         #region BackToMainForm
         private void btn_BackToMainForm_Click(object sender, System.EventArgs e)
@@ -143,24 +141,65 @@ namespace Quark.Forms
 
         #endregion / BackToMainForm
 
-        #region btn_BrowsePicturePhonebook
-        private void btn_BrowsePicturePhonebook_Click(object sender, EventArgs e)
+        #region Browse Picture
+        private void btn_BrowsePicturePhonebook_Click(object sender, System.EventArgs e)
         {
             openFileDialog1.Title = "انتخاب عکس";
             openFileDialog1.Filter = "JPG FILE|*.jpg|" + "BMP FILE |*.bmp|" + "GIF FILE |*.gif|" + "All File|*.*";
             openFileDialog1.FilterIndex = 1;
 
-            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            if (openFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
-                picbox.Image = Image.FromFile(openFileDialog1.FileName);
-                picbox.Refresh();
+                pictureBox.Image = System.Drawing.Image.FromFile(openFileDialog1.FileName);
+                pictureBox.Refresh();
             }
         }
 
-        #endregion / btn_BrowsePicturePhonebook
+
+        #endregion / Browse Picture
+
+        #region Edit
+        private void editButton_Click(object sender, System.EventArgs e)
+        {
+
+        }
+
+        #endregion //Edit
+
+        #region Delete
+        private void deleteButton_Click(object sender, System.EventArgs e)
+        {
+
+        }
+
+        #endregion / Delete
 
         #region 
+
+
         #endregion
+
+        #region 
+
+
+        #endregion
+
+        #region tool
+        private void persianDateTimePicker1_ValueChanged(object sender, FreeControls.PersianMonthCalendarEventArgs e)
+        {
+            dateOfBirthDateTimePicker.Value = System.DateTime.Now;
+        }
+
+        private void dtSelectorPhonebook_ValueChanged(object sender, System.EventArgs e)
+        {
+            dateOfBirth1DateTimePicker.Value = System.DateTime.Now;
+        }
+
+        #endregion
+
+
+
+
 
 
     }

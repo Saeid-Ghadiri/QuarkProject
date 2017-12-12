@@ -30,19 +30,21 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PhonebookForm));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.persianDateTimePicker1 = new FreeControls.PersianDateTimePicker();
-            this.dtSelectorPhonebook = new Atf.UI.DateTimeSelector();
-            this.btn_BrowsePicturePhonebook = new System.Windows.Forms.Button();
+            this.dateOfBirthDateTimePicker = new FreeControls.PersianDateTimePicker();
+            this.dateOfBirth1DateTimePicker = new Atf.UI.DateTimeSelector();
+            this.browsePictureBoxButton = new System.Windows.Forms.Button();
             this.btn_BackToMainForm = new System.Windows.Forms.Button();
-            this.btn_Save = new System.Windows.Forms.Button();
-            this.picbox = new System.Windows.Forms.PictureBox();
-            this.txt_Description = new System.Windows.Forms.RichTextBox();
-            this.txt_Address = new System.Windows.Forms.RichTextBox();
+            this.deleteButton = new System.Windows.Forms.Button();
+            this.editButton = new System.Windows.Forms.Button();
+            this.insertButton = new System.Windows.Forms.Button();
+            this.pictureBox = new System.Windows.Forms.PictureBox();
+            this.descriptionTextBox = new System.Windows.Forms.RichTextBox();
+            this.addressTextBox = new System.Windows.Forms.RichTextBox();
             this.textBox12 = new System.Windows.Forms.TextBox();
-            this.txt_Fax = new System.Windows.Forms.TextBox();
-            this.txt_middleName = new System.Windows.Forms.TextBox();
-            this.txt_Email = new System.Windows.Forms.TextBox();
-            this.txt_LastName = new System.Windows.Forms.TextBox();
+            this.faxTextBox = new System.Windows.Forms.TextBox();
+            this.middleNameTextBox = new System.Windows.Forms.TextBox();
+            this.emailTextBox = new System.Windows.Forms.TextBox();
+            this.lastNameTextBox = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
@@ -53,38 +55,40 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox10 = new System.Windows.Forms.TextBox();
-            this.txt_Telephone = new System.Windows.Forms.TextBox();
-            this.txt_NickName = new System.Windows.Forms.TextBox();
+            this.telephoneTextBox = new System.Windows.Forms.TextBox();
+            this.nickNameTextBox = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.txt_CellPhone = new System.Windows.Forms.TextBox();
+            this.cellphoneTextBox = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.txt_NationalCode = new System.Windows.Forms.TextBox();
+            this.nationalCodeTextBox = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.txt_FirstName = new System.Windows.Forms.TextBox();
+            this.firstNameTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picbox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.PeachPuff;
-            this.groupBox1.Controls.Add(this.persianDateTimePicker1);
-            this.groupBox1.Controls.Add(this.dtSelectorPhonebook);
-            this.groupBox1.Controls.Add(this.btn_BrowsePicturePhonebook);
+            this.groupBox1.Controls.Add(this.dateOfBirthDateTimePicker);
+            this.groupBox1.Controls.Add(this.dateOfBirth1DateTimePicker);
+            this.groupBox1.Controls.Add(this.browsePictureBoxButton);
             this.groupBox1.Controls.Add(this.btn_BackToMainForm);
-            this.groupBox1.Controls.Add(this.btn_Save);
-            this.groupBox1.Controls.Add(this.picbox);
-            this.groupBox1.Controls.Add(this.txt_Description);
-            this.groupBox1.Controls.Add(this.txt_Address);
+            this.groupBox1.Controls.Add(this.deleteButton);
+            this.groupBox1.Controls.Add(this.editButton);
+            this.groupBox1.Controls.Add(this.insertButton);
+            this.groupBox1.Controls.Add(this.pictureBox);
+            this.groupBox1.Controls.Add(this.descriptionTextBox);
+            this.groupBox1.Controls.Add(this.addressTextBox);
             this.groupBox1.Controls.Add(this.textBox12);
-            this.groupBox1.Controls.Add(this.txt_Fax);
-            this.groupBox1.Controls.Add(this.txt_middleName);
-            this.groupBox1.Controls.Add(this.txt_Email);
-            this.groupBox1.Controls.Add(this.txt_LastName);
+            this.groupBox1.Controls.Add(this.faxTextBox);
+            this.groupBox1.Controls.Add(this.middleNameTextBox);
+            this.groupBox1.Controls.Add(this.emailTextBox);
+            this.groupBox1.Controls.Add(this.lastNameTextBox);
             this.groupBox1.Controls.Add(this.label15);
             this.groupBox1.Controls.Add(this.label14);
             this.groupBox1.Controls.Add(this.label13);
@@ -95,16 +99,16 @@
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.textBox10);
-            this.groupBox1.Controls.Add(this.txt_Telephone);
-            this.groupBox1.Controls.Add(this.txt_NickName);
+            this.groupBox1.Controls.Add(this.telephoneTextBox);
+            this.groupBox1.Controls.Add(this.nickNameTextBox);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.txt_CellPhone);
+            this.groupBox1.Controls.Add(this.cellphoneTextBox);
             this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.txt_NationalCode);
+            this.groupBox1.Controls.Add(this.nationalCodeTextBox);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.txt_FirstName);
+            this.groupBox1.Controls.Add(this.firstNameTextBox);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
@@ -114,36 +118,38 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "دفترچه تلفن";
             // 
-            // persianDateTimePicker1
+            // dateOfBirthDateTimePicker
             // 
-            this.persianDateTimePicker1.BackColor = System.Drawing.Color.White;
-            this.persianDateTimePicker1.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.persianDateTimePicker1.Location = new System.Drawing.Point(486, 156);
-            this.persianDateTimePicker1.Name = "persianDateTimePicker1";
-            this.persianDateTimePicker1.ShowTime = false;
-            this.persianDateTimePicker1.Size = new System.Drawing.Size(175, 18);
-            this.persianDateTimePicker1.TabIndex = 33;
-            this.persianDateTimePicker1.Text = "persianDateTimePicker1";
-            this.persianDateTimePicker1.Value = ((FreeControls.PersianDate)(resources.GetObject("persianDateTimePicker1.Value")));
+            this.dateOfBirthDateTimePicker.BackColor = System.Drawing.Color.White;
+            this.dateOfBirthDateTimePicker.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.dateOfBirthDateTimePicker.Location = new System.Drawing.Point(486, 156);
+            this.dateOfBirthDateTimePicker.Name = "dateOfBirthDateTimePicker";
+            this.dateOfBirthDateTimePicker.ShowTime = false;
+            this.dateOfBirthDateTimePicker.Size = new System.Drawing.Size(175, 18);
+            this.dateOfBirthDateTimePicker.TabIndex = 33;
+            this.dateOfBirthDateTimePicker.Text = "persianDateTimePicker1";
+            this.dateOfBirthDateTimePicker.Value = ((FreeControls.PersianDate)(resources.GetObject("dateOfBirthDateTimePicker.Value")));
+            this.dateOfBirthDateTimePicker.ValueChanged += new FreeControls.PersianDateTimePicker.onValueChanged(this.persianDateTimePicker1_ValueChanged);
             // 
-            // dtSelectorPhonebook
+            // dateOfBirth1DateTimePicker
             // 
-            this.dtSelectorPhonebook.Location = new System.Drawing.Point(183, 261);
-            this.dtSelectorPhonebook.Name = "dtSelectorPhonebook";
-            this.dtSelectorPhonebook.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.dtSelectorPhonebook.Size = new System.Drawing.Size(175, 31);
-            this.dtSelectorPhonebook.TabIndex = 32;
-            this.dtSelectorPhonebook.UsePersianFormat = true;
+            this.dateOfBirth1DateTimePicker.Location = new System.Drawing.Point(183, 261);
+            this.dateOfBirth1DateTimePicker.Name = "dateOfBirth1DateTimePicker";
+            this.dateOfBirth1DateTimePicker.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.dateOfBirth1DateTimePicker.Size = new System.Drawing.Size(175, 31);
+            this.dateOfBirth1DateTimePicker.TabIndex = 32;
+            this.dateOfBirth1DateTimePicker.UsePersianFormat = true;
+            this.dateOfBirth1DateTimePicker.ValueChanged += new System.EventHandler(this.dtSelectorPhonebook_ValueChanged);
             // 
-            // btn_BrowsePicturePhonebook
+            // browsePictureBoxButton
             // 
-            this.btn_BrowsePicturePhonebook.Location = new System.Drawing.Point(12, 377);
-            this.btn_BrowsePicturePhonebook.Name = "btn_BrowsePicturePhonebook";
-            this.btn_BrowsePicturePhonebook.Size = new System.Drawing.Size(46, 28);
-            this.btn_BrowsePicturePhonebook.TabIndex = 29;
-            this.btn_BrowsePicturePhonebook.Text = "...";
-            this.btn_BrowsePicturePhonebook.UseVisualStyleBackColor = true;
-            this.btn_BrowsePicturePhonebook.Click += new System.EventHandler(this.btn_BrowsePicturePhonebook_Click);
+            this.browsePictureBoxButton.Location = new System.Drawing.Point(12, 377);
+            this.browsePictureBoxButton.Name = "browsePictureBoxButton";
+            this.browsePictureBoxButton.Size = new System.Drawing.Size(46, 28);
+            this.browsePictureBoxButton.TabIndex = 29;
+            this.browsePictureBoxButton.Text = "...";
+            this.browsePictureBoxButton.UseVisualStyleBackColor = true;
+            this.browsePictureBoxButton.Click += new System.EventHandler(this.btn_BrowsePicturePhonebook_Click);
             // 
             // btn_BackToMainForm
             // 
@@ -158,44 +164,70 @@
             this.btn_BackToMainForm.UseVisualStyleBackColor = true;
             this.btn_BackToMainForm.Click += new System.EventHandler(this.btn_BackToMainForm_Click);
             // 
-            // btn_Save
+            // deleteButton
             // 
-            this.btn_Save.Image = ((System.Drawing.Image)(resources.GetObject("btn_Save.Image")));
-            this.btn_Save.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_Save.Location = new System.Drawing.Point(628, 539);
-            this.btn_Save.Name = "btn_Save";
-            this.btn_Save.Size = new System.Drawing.Size(126, 47);
-            this.btn_Save.TabIndex = 30;
-            this.btn_Save.Text = "ذخیره اطلاعات";
-            this.btn_Save.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Save.UseVisualStyleBackColor = true;
-            this.btn_Save.Click += new System.EventHandler(this.btn_Save_Click);
+            this.deleteButton.Image = global::Quark.Properties.Resources.cancel;
+            this.deleteButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.deleteButton.Location = new System.Drawing.Point(358, 539);
+            this.deleteButton.Name = "deleteButton";
+            this.deleteButton.Size = new System.Drawing.Size(126, 47);
+            this.deleteButton.TabIndex = 30;
+            this.deleteButton.Text = "حذف اطلاعات";
+            this.deleteButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.deleteButton.UseVisualStyleBackColor = true;
+            this.deleteButton.Click += new System.EventHandler(this.deleteButton_Click);
             // 
-            // picbox
+            // editButton
             // 
-            this.picbox.Image = ((System.Drawing.Image)(resources.GetObject("picbox.Image")));
-            this.picbox.Location = new System.Drawing.Point(12, 235);
-            this.picbox.Name = "picbox";
-            this.picbox.Size = new System.Drawing.Size(120, 139);
-            this.picbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picbox.TabIndex = 3;
-            this.picbox.TabStop = false;
+            this.editButton.Image = global::Quark.Properties.Resources.edit;
+            this.editButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.editButton.Location = new System.Drawing.Point(490, 539);
+            this.editButton.Name = "editButton";
+            this.editButton.Size = new System.Drawing.Size(126, 47);
+            this.editButton.TabIndex = 30;
+            this.editButton.Text = "ویرایش اطلاعات";
+            this.editButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.editButton.UseVisualStyleBackColor = true;
+            this.editButton.Click += new System.EventHandler(this.editButton_Click);
             // 
-            // txt_Description
+            // insertButton
             // 
-            this.txt_Description.Location = new System.Drawing.Point(12, 133);
-            this.txt_Description.Name = "txt_Description";
-            this.txt_Description.Size = new System.Drawing.Size(405, 96);
-            this.txt_Description.TabIndex = 27;
-            this.txt_Description.Text = "";
+            this.insertButton.Image = ((System.Drawing.Image)(resources.GetObject("insertButton.Image")));
+            this.insertButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.insertButton.Location = new System.Drawing.Point(622, 539);
+            this.insertButton.Name = "insertButton";
+            this.insertButton.Size = new System.Drawing.Size(126, 47);
+            this.insertButton.TabIndex = 30;
+            this.insertButton.Text = "ذخیره اطلاعات";
+            this.insertButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.insertButton.UseVisualStyleBackColor = true;
+            this.insertButton.Click += new System.EventHandler(this.insertButton_Click);
             // 
-            // txt_Address
+            // pictureBox
             // 
-            this.txt_Address.Location = new System.Drawing.Point(12, 32);
-            this.txt_Address.Name = "txt_Address";
-            this.txt_Address.Size = new System.Drawing.Size(405, 96);
-            this.txt_Address.TabIndex = 25;
-            this.txt_Address.Text = "";
+            this.pictureBox.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox.Image")));
+            this.pictureBox.Location = new System.Drawing.Point(12, 235);
+            this.pictureBox.Name = "pictureBox";
+            this.pictureBox.Size = new System.Drawing.Size(120, 139);
+            this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox.TabIndex = 3;
+            this.pictureBox.TabStop = false;
+            // 
+            // descriptionTextBox
+            // 
+            this.descriptionTextBox.Location = new System.Drawing.Point(12, 133);
+            this.descriptionTextBox.Name = "descriptionTextBox";
+            this.descriptionTextBox.Size = new System.Drawing.Size(405, 96);
+            this.descriptionTextBox.TabIndex = 27;
+            this.descriptionTextBox.Text = "";
+            // 
+            // addressTextBox
+            // 
+            this.addressTextBox.Location = new System.Drawing.Point(12, 32);
+            this.addressTextBox.Name = "addressTextBox";
+            this.addressTextBox.Size = new System.Drawing.Size(405, 96);
+            this.addressTextBox.TabIndex = 25;
+            this.addressTextBox.Text = "";
             // 
             // textBox12
             // 
@@ -206,39 +238,39 @@
             this.textBox12.TabIndex = 23;
             this.textBox12.Visible = false;
             // 
-            // txt_Fax
+            // faxTextBox
             // 
-            this.txt_Fax.Location = new System.Drawing.Point(486, 253);
-            this.txt_Fax.Multiline = true;
-            this.txt_Fax.Name = "txt_Fax";
-            this.txt_Fax.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txt_Fax.Size = new System.Drawing.Size(175, 30);
-            this.txt_Fax.TabIndex = 15;
+            this.faxTextBox.Location = new System.Drawing.Point(486, 253);
+            this.faxTextBox.Multiline = true;
+            this.faxTextBox.Name = "faxTextBox";
+            this.faxTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.faxTextBox.Size = new System.Drawing.Size(175, 30);
+            this.faxTextBox.TabIndex = 15;
             // 
-            // txt_middleName
+            // middleNameTextBox
             // 
-            this.txt_middleName.Location = new System.Drawing.Point(486, 319);
-            this.txt_middleName.Multiline = true;
-            this.txt_middleName.Name = "txt_middleName";
-            this.txt_middleName.Size = new System.Drawing.Size(175, 30);
-            this.txt_middleName.TabIndex = 19;
+            this.middleNameTextBox.Location = new System.Drawing.Point(486, 319);
+            this.middleNameTextBox.Multiline = true;
+            this.middleNameTextBox.Name = "middleNameTextBox";
+            this.middleNameTextBox.Size = new System.Drawing.Size(175, 30);
+            this.middleNameTextBox.TabIndex = 19;
             // 
-            // txt_Email
+            // emailTextBox
             // 
-            this.txt_Email.Location = new System.Drawing.Point(486, 187);
-            this.txt_Email.Multiline = true;
-            this.txt_Email.Name = "txt_Email";
-            this.txt_Email.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txt_Email.Size = new System.Drawing.Size(175, 30);
-            this.txt_Email.TabIndex = 11;
+            this.emailTextBox.Location = new System.Drawing.Point(486, 187);
+            this.emailTextBox.Multiline = true;
+            this.emailTextBox.Name = "emailTextBox";
+            this.emailTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.emailTextBox.Size = new System.Drawing.Size(175, 30);
+            this.emailTextBox.TabIndex = 11;
             // 
-            // txt_LastName
+            // lastNameTextBox
             // 
-            this.txt_LastName.Location = new System.Drawing.Point(486, 88);
-            this.txt_LastName.Multiline = true;
-            this.txt_LastName.Name = "txt_LastName";
-            this.txt_LastName.Size = new System.Drawing.Size(175, 30);
-            this.txt_LastName.TabIndex = 5;
+            this.lastNameTextBox.Location = new System.Drawing.Point(486, 88);
+            this.lastNameTextBox.Multiline = true;
+            this.lastNameTextBox.Name = "lastNameTextBox";
+            this.lastNameTextBox.Size = new System.Drawing.Size(175, 30);
+            this.lastNameTextBox.TabIndex = 5;
             // 
             // label15
             // 
@@ -331,22 +363,22 @@
             this.textBox10.TabIndex = 21;
             this.textBox10.Visible = false;
             // 
-            // txt_Telephone
+            // telephoneTextBox
             // 
-            this.txt_Telephone.Location = new System.Drawing.Point(486, 220);
-            this.txt_Telephone.Multiline = true;
-            this.txt_Telephone.Name = "txt_Telephone";
-            this.txt_Telephone.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txt_Telephone.Size = new System.Drawing.Size(175, 30);
-            this.txt_Telephone.TabIndex = 13;
+            this.telephoneTextBox.Location = new System.Drawing.Point(486, 220);
+            this.telephoneTextBox.Multiline = true;
+            this.telephoneTextBox.Name = "telephoneTextBox";
+            this.telephoneTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.telephoneTextBox.Size = new System.Drawing.Size(175, 30);
+            this.telephoneTextBox.TabIndex = 13;
             // 
-            // txt_NickName
+            // nickNameTextBox
             // 
-            this.txt_NickName.Location = new System.Drawing.Point(486, 120);
-            this.txt_NickName.Multiline = true;
-            this.txt_NickName.Name = "txt_NickName";
-            this.txt_NickName.Size = new System.Drawing.Size(175, 30);
-            this.txt_NickName.TabIndex = 7;
+            this.nickNameTextBox.Location = new System.Drawing.Point(486, 120);
+            this.nickNameTextBox.Multiline = true;
+            this.nickNameTextBox.Name = "nickNameTextBox";
+            this.nickNameTextBox.Size = new System.Drawing.Size(175, 30);
+            this.nickNameTextBox.TabIndex = 7;
             // 
             // label10
             // 
@@ -376,14 +408,14 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "نام مستعار:";
             // 
-            // txt_CellPhone
+            // cellphoneTextBox
             // 
-            this.txt_CellPhone.Location = new System.Drawing.Point(486, 286);
-            this.txt_CellPhone.Multiline = true;
-            this.txt_CellPhone.Name = "txt_CellPhone";
-            this.txt_CellPhone.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txt_CellPhone.Size = new System.Drawing.Size(175, 30);
-            this.txt_CellPhone.TabIndex = 17;
+            this.cellphoneTextBox.Location = new System.Drawing.Point(486, 286);
+            this.cellphoneTextBox.Multiline = true;
+            this.cellphoneTextBox.Name = "cellphoneTextBox";
+            this.cellphoneTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.cellphoneTextBox.Size = new System.Drawing.Size(175, 30);
+            this.cellphoneTextBox.TabIndex = 17;
             // 
             // label9
             // 
@@ -394,15 +426,15 @@
             this.label9.TabIndex = 16;
             this.label9.Text = "شماره همراه:";
             // 
-            // txt_NationalCode
+            // nationalCodeTextBox
             // 
-            this.txt_NationalCode.BackColor = System.Drawing.SystemColors.Window;
-            this.txt_NationalCode.Location = new System.Drawing.Point(486, 24);
-            this.txt_NationalCode.Multiline = true;
-            this.txt_NationalCode.Name = "txt_NationalCode";
-            this.txt_NationalCode.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txt_NationalCode.Size = new System.Drawing.Size(175, 30);
-            this.txt_NationalCode.TabIndex = 1;
+            this.nationalCodeTextBox.BackColor = System.Drawing.SystemColors.Window;
+            this.nationalCodeTextBox.Location = new System.Drawing.Point(486, 24);
+            this.nationalCodeTextBox.Multiline = true;
+            this.nationalCodeTextBox.Name = "nationalCodeTextBox";
+            this.nationalCodeTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.nationalCodeTextBox.Size = new System.Drawing.Size(175, 30);
+            this.nationalCodeTextBox.TabIndex = 1;
             // 
             // label5
             // 
@@ -413,13 +445,13 @@
             this.label5.TabIndex = 0;
             this.label5.Text = "کد ملی:";
             // 
-            // txt_FirstName
+            // firstNameTextBox
             // 
-            this.txt_FirstName.Location = new System.Drawing.Point(486, 56);
-            this.txt_FirstName.Multiline = true;
-            this.txt_FirstName.Name = "txt_FirstName";
-            this.txt_FirstName.Size = new System.Drawing.Size(175, 30);
-            this.txt_FirstName.TabIndex = 3;
+            this.firstNameTextBox.Location = new System.Drawing.Point(486, 56);
+            this.firstNameTextBox.Multiline = true;
+            this.firstNameTextBox.Name = "firstNameTextBox";
+            this.firstNameTextBox.Size = new System.Drawing.Size(175, 30);
+            this.firstNameTextBox.TabIndex = 3;
             // 
             // label1
             // 
@@ -447,7 +479,7 @@
             this.Load += new System.EventHandler(this.PhonebookForm_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picbox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -455,17 +487,17 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button btn_BrowsePicturePhonebook;
+        private System.Windows.Forms.Button browsePictureBoxButton;
         private System.Windows.Forms.Button btn_BackToMainForm;
-        private System.Windows.Forms.Button btn_Save;
-        private System.Windows.Forms.PictureBox picbox;
-        private System.Windows.Forms.RichTextBox txt_Description;
-        private System.Windows.Forms.RichTextBox txt_Address;
+        private System.Windows.Forms.Button insertButton;
+        private System.Windows.Forms.PictureBox pictureBox;
+        private System.Windows.Forms.RichTextBox descriptionTextBox;
+        private System.Windows.Forms.RichTextBox addressTextBox;
         private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox txt_Fax;
-        private System.Windows.Forms.TextBox txt_middleName;
-        private System.Windows.Forms.TextBox txt_Email;
-        private System.Windows.Forms.TextBox txt_LastName;
+        private System.Windows.Forms.TextBox faxTextBox;
+        private System.Windows.Forms.TextBox middleNameTextBox;
+        private System.Windows.Forms.TextBox emailTextBox;
+        private System.Windows.Forms.TextBox lastNameTextBox;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
@@ -476,19 +508,21 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox txt_Telephone;
-        private System.Windows.Forms.TextBox txt_NickName;
+        private System.Windows.Forms.TextBox telephoneTextBox;
+        private System.Windows.Forms.TextBox nickNameTextBox;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txt_CellPhone;
+        private System.Windows.Forms.TextBox cellphoneTextBox;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox txt_NationalCode;
+        private System.Windows.Forms.TextBox nationalCodeTextBox;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txt_FirstName;
+        private System.Windows.Forms.TextBox firstNameTextBox;
         private System.Windows.Forms.Label label1;
-        private Atf.UI.DateTimeSelector dtSelectorPhonebook;
+        private Atf.UI.DateTimeSelector dateOfBirth1DateTimePicker;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private FreeControls.PersianDateTimePicker persianDateTimePicker1;
+        private FreeControls.PersianDateTimePicker dateOfBirthDateTimePicker;
+        private System.Windows.Forms.Button deleteButton;
+        private System.Windows.Forms.Button editButton;
     }
 }
