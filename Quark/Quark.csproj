@@ -33,14 +33,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AmirCalendar">
-      <HintPath>..\..\..\..\..\..\Downloads\C# Component and DLL\960503\AmirCalendar.dll</HintPath>
-    </Reference>
     <Reference Include="CircularProgressBarSgx">
-      <HintPath>..\..\..\CircularProgressBarSgx\CircularProgressBarSgx\bin\Debug\CircularProgressBarSgx.dll</HintPath>
+      <HintPath>D:\QuarkSolution-960925-10.59\QuarkSolution\Quark\Quark\bin\Debug\CircularProgressBarSgx.dll</HintPath>
     </Reference>
     <Reference Include="DateTimeSelector">
-      <HintPath>..\..\..\..\..\..\Downloads\C# Component and DLL\DateTimeSelector\DateTimeSelector.dll</HintPath>
+      <HintPath>D:\QuarkSolution-960925-10.59\QuarkSolution\Quark\Quark\bin\Debug\DateTimeSelector.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
@@ -52,22 +49,22 @@
       <HintPath>..\packages\EntityFramework.SqlServerCompact.6.1.3\lib\net45\EntityFramework.SqlServerCompact.dll</HintPath>
     </Reference>
     <Reference Include="FarsiLibrary.Resources">
-      <HintPath>..\..\..\..\..\..\Downloads\C# Component and DLL\960503\FarsiLibrary\FarsiLibrary.Resources.dll</HintPath>
+      <HintPath>D:\QuarkSolution-960925-10.59\QuarkSolution\Quark\Quark\bin\Debug\FarsiLibrary.Resources.dll</HintPath>
     </Reference>
     <Reference Include="FarsiLibrary.Utils">
-      <HintPath>..\..\..\..\..\..\Downloads\C# Component and DLL\960503\FarsiLibrary\FarsiLibrary.Utils.dll</HintPath>
+      <HintPath>D:\QuarkSolution-960925-10.59\QuarkSolution\Quark\Quark\bin\Debug\FarsiLibrary.Utils.dll</HintPath>
     </Reference>
     <Reference Include="FarsiLibrary.Win">
-      <HintPath>..\..\..\..\..\..\Downloads\C# Component and DLL\960503\FarsiLibrary\FarsiLibrary.Win.dll</HintPath>
+      <HintPath>D:\QuarkSolution-960925-10.59\QuarkSolution\Quark\Quark\bin\Debug\FarsiLibrary.Win.dll</HintPath>
     </Reference>
     <Reference Include="PersianDate">
-      <HintPath>..\..\..\..\..\..\..\..\..\Downloads\Compressed\PersianDate\PersianDate\PersianDate\PersianDate\bin\Debug\PersianDate.dll</HintPath>
+      <HintPath>D:\QuarkSolution-960925-10.59\QuarkSolution\Quark\Quark\bin\Debug\PersianDate.dll</HintPath>
     </Reference>
     <Reference Include="PersianDateTime, Version=1.1.5082.36395, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\PersianDateTime.1.1.5082.36395\lib\net40\PersianDateTime.dll</HintPath>
     </Reference>
     <Reference Include="PopupControl">
-      <HintPath>..\..\..\..\..\..\..\..\..\Downloads\Compressed\PersianDate\PersianDate\PersianDate\PersianDate\bin\Debug\PopupControl.dll</HintPath>
+      <HintPath>D:\QuarkSolution-960925-10.59\QuarkSolution\Quark\Quark\bin\Debug\PopupControl.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />

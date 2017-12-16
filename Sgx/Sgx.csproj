@@ -30,11 +30,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AmirCalendar">
-      <HintPath>..\..\..\..\..\..\Downloads\C# Component and DLL\960503\AmirCalendar.dll</HintPath>
-    </Reference>
     <Reference Include="CircularProgressBarSgx">
-      <HintPath>..\..\..\CircularProgressBarSgx\CircularProgressBarSgx\bin\Debug\CircularProgressBarSgx.dll</HintPath>
+      <HintPath>E:\sa\dll\CircularProgressBarSgx.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
@@ -46,13 +43,13 @@
       <HintPath>..\packages\EntityFramework.SqlServerCompact.6.2.0\lib\net45\EntityFramework.SqlServerCompact.dll</HintPath>
     </Reference>
     <Reference Include="FarsiLibrary.Resources">
-      <HintPath>..\..\..\..\..\..\Downloads\C# Component and DLL\960503\FarsiLibrary\FarsiLibrary.Resources.dll</HintPath>
+      <HintPath>E:\sa\dll\FarsiLibrary.Resources.dll</HintPath>
     </Reference>
     <Reference Include="FarsiLibrary.Utils">
-      <HintPath>..\..\..\..\..\..\Downloads\C# Component and DLL\960503\FarsiLibrary\FarsiLibrary.Utils.dll</HintPath>
+      <HintPath>E:\sa\dll\FarsiLibrary.Utils.dll</HintPath>
     </Reference>
     <Reference Include="FarsiLibrary.Win">
-      <HintPath>..\..\..\..\..\..\Downloads\C# Component and DLL\960503\FarsiLibrary\FarsiLibrary.Win.dll</HintPath>
+      <HintPath>E:\sa\dll\FarsiLibrary.Win.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
